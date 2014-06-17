@@ -1,1 +1,11 @@
 This application generates and calculates 3D matrices using Java RMI.
+
+1.Initiate the RMI Registry by running Server.Server. For example:
+
+Java Server.Server 168.18.104.181
+
+2.Run IO.IO to run the client side of the RMI program. For example:
+
+Java IO.IO 4 168.18.104.181
+
+This will create square matrices A and B, with a length of 4. The randomly generated values vary between -100 and 100. Using RMI, matrix C (the product of A and B) is calculated. Matrices A, B and C are printed and saved to a log file.
